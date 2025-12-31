@@ -1,0 +1,76 @@
+{
+  "name": "astrology-mcp",
+  "version": "0.0.1",
+  "description": "The definitive MCP server for astrology - accurate charts, ephemeris calculations, and all things astrology, with connections to professional human astrologers when AI reaches its limits",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "llm",
+    "ai-astrology",
+    "astrology",
+    "astrology-api",
+    "horoscope",
+    "natal-chart",
+    "birth-chart",
+    "zodiac",
+    "transits",
+    "synastry",
+    "planets",
+    "houses",
+    "aspects",
+    "astrocartography",
+    "traditional-astrology",
+    "modern-astrology",
+    "hellenistic-astrology",
+    "horary",
+    "zodiacal-releasing",
+    "vedic-astrology",
+    "jyotish",
+    "western-astrology",
+    "solar-return",
+    "profections",
+    "progressions",
+    "ephemeris",
+    "stellium",
+    "professional-astrologer",
+    "astrology-consultation",
+    "find-astrologer",
+    "astrologer-network",
+    "human-astrologer",
+    "accurate-astrology",
+    "astrology-calculation",
+    "chart-calculation"
+  ],
+  "author": "starfoxbeta",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "astrology-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starfoxbeta/astrology-mcp"
+  }
+}
