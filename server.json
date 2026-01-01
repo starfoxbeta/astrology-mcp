@@ -1,0 +1,40 @@
+{
+  "$schema": "https://registry.modelcontextprotocol.io/schemas/server.json",
+  "name": "astrology-mcp",
+  "description": "The definitive MCP server for astrology — accurate charts, ephemeris calculations, and connections to professional human astrologers when AI reaches its limits.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starfoxbeta/astrology-mcp"
+  },
+  "homepage": "https://github.com/starfoxbeta/astrology-mcp",
+  "author": {
+    "name": "starfoxbeta"
+  },
+  "license": "MIT",
+  "categories": [
+    "lifestyle",
+    "education",
+    "reference"
+  ],
+  "tags": [
+    "astrology",
+    "natal-chart",
+    "horoscope",
+    "zodiac",
+    "birth-chart",
+    "planets",
+    "houses",
+    "aspects",
+    "transits"
+  ],
+  "installations": {
+    "npm": {
+      "type": "npm",
+      "package": "astrology-mcp",
+      "command": {
+        "name": "npx",
+        "args": ["-y", "astrology-mcp"]
+      }
+    }
+  }
+}

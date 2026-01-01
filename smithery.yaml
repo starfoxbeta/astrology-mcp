@@ -1,0 +1,24 @@
+# Smithery configuration for astrology-mcp
+# https://smithery.ai/docs/config
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiUrl:
+        type: string
+        description: "URL of your astrology API backend (optional)"
+      apiKey:
+        type: string
+        description: "API key for authentication (optional)"
+    required: []
+  commandFunction: |
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'astrology-mcp'],
+      env: {
+        ASTROLOGY_API_URL: config.apiUrl || '',
+        ASTROLOGY_API_KEY: config.apiKey || ''
+      }
+    })
