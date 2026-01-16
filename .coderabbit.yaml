@@ -1,0 +1,66 @@
+# CodeRabbit Configuration for Astrology MCP (Node.js)
+# See: https://docs.coderabbit.ai/guides/configure-coderabbit
+
+language: en-US
+early_access: false
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    # Skip dependencies and build artifacts
+    - "!**/node_modules/**"
+    - "!**/dist/**"
+    - "!**/build/**"
+    - "!**/.next/**"
+    - "!**/out/**"
+
+    # Skip lock files
+    - "!**/package-lock.json"
+    - "!**/yarn.lock"
+    - "!**/pnpm-lock.yaml"
+
+    # Skip cache and temp files
+    - "!**/.cache/**"
+    - "!**/coverage/**"
+    - "!**/*.log"
+    - "!**/.env*"
+    - "!**/logs/**"
+
+  path_instructions:
+    - path: "**/*.{js,ts}"
+      instructions: |
+        - Check for proper error handling
+        - Verify async/await usage
+        - Look for potential security issues
+        - Check for proper input validation
+        - Review MCP protocol implementation
+
+    - path: "**/src/**/*.{js,ts}"
+      instructions: |
+        - Focus on code maintainability and clarity
+        - Check for proper module structure
+        - Verify exports and imports
+        - Review MCP tool definitions and handlers
+
+    - path: "**/test/**"
+      instructions: |
+        - Ensure tests are clear and maintainable
+        - Don't be too strict on test code style
+        - Verify edge cases are covered
+
+chat:
+  auto_reply: true
+
+tools:
+  eslint:
+    enabled: true
+
+  markdownlint:
+    enabled: true
